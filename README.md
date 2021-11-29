@@ -57,15 +57,42 @@ The model for the prediction is also contained in a function called `pipeline(df
 The model is then exported by saving it in a file using pickle or mlflow. 
 
 ### Evaluation
-The model is evaluated using `sklearn predict()` method while the performance metrics are realized using `classification_report, cross_val_score and  accuracy_score `. The accuarcy of the model stands at approximately 87 percent. 
+The model is evaluated using `sklearn predict()` method while the performance metrics are realized using `classification_report, cross_val_score and  accuracy_score `. The accuarcy of the model stands at approximately 87 percent in Jupyter notebook and 84 percent when deployed in python scripts. 
 
 ### Deployment 
-The model is deployed as a web app using `Plotly Dash`. 
+The model is deployed as a web app using `Plotly Dash`. The app is simple  and interactive. It allows users to predict whether an employee would (did) leave his/her employment by inputing his or her numerical variables' values. The categorical variables of the required data have been encoded and replaced with numerical values behind the scene. A value of `1` implies that an employee left or would leave the employment. Below are two screenshots of the predictions. 
+
+
+![Prediction of Resignation](images/predict1.png)
+
+
+![Prediction of No Resignation](images/predict0.png)
+
+
+### Project Structure
+The is organized as follows with respect to the files and folders:
+Root Directory (`predicting_employee_resignation`)
+    |       |       |               |
+    |       |       |               |
+    |       |       |               |
+    |     `app`   `model`           |
+    |       |       |               |
+    |     `app.py`  `model.py`      |
+    |                               |
+    |                               |
+  `data`------                      |
+   |    |     |                 `employee.ipynb`
+   |    |     |
+   |    |    `etl.py`
+   |    |
+   |    `Employee.csv(dataset)`
+   |
+`etlDatabase.db`
 
 
 ### Status of the Project
 
-The project is `ongoing`. 
+The project is completed but there are rooms for further improvements such as the User interface of the app, improving the accuracy of the model and most importantly, making the datasets universial without restriction to only three Indian cities. 
 
 
 ### Authors

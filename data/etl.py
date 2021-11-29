@@ -204,18 +204,21 @@ def main():
         print("Presenting Data Understanding in Style")
         df_most_before, df_most_after = data_cleaning_and_understanding(df)
         print("="*50)
-        print('Visualing Data of the most likely group to resign')
-        visualize_results(df)
-        print('='*50)
+        
         print("Preparing Data For Machine Learning by Replacing Categorical Variables with Dummy Variables")
-        df = create_dummy_df(df, dummy_na=False)
+        df1 = create_dummy_df(df, dummy_na=False)
         print('='*50)
 
         
-        print('Saving data ...\n  To   DATABASE: {}'.format(database_filepath))
-        save_data(df, database_filepath)
         
-        print('Cleaned data saved to database!')
+        print('Saving data ...\n  To   DATABASE: {}'.format(database_filepath))
+        save_data(df1, database_filepath)
+        
+        print('Prepared data ready for building a model saved to database!')
+
+        print('Visualing Data of the most likely group to resign')
+        visualize_results(df)
+        print('='*50)
     
     else:
         print('Please provide the filepaths of employee '\
