@@ -42,6 +42,11 @@ Data understanding is modularized in a function known as `data_cleaning_and_unde
 
 ![Second Image](images/img3.png)
 
+The diagram below shows the comparison between the distributions of employees before and after those that left their employments with respect to gender. 
+
+
+![Third Image](images/img4.png)
+
 ### Data Preparation
 The data needed for the modeling is prepared under a function called `create_dummy_df(df, dummy_na=False)`. 
 
@@ -56,3 +61,12 @@ The model is evaluated using `sklearn predict()` method while the performance me
 
 ### Deployment 
 The model is deployed as a web app using `Plotly Dash`. 
+
+
+### Status of the Project
+
+The project is `ongoing`. 
+
+
+### Authors
+Ernest Offor Ugwoke
