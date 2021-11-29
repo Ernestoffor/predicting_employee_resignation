@@ -57,14 +57,14 @@ def pipeline(df):
     # Define the model and train or fit it
     
     model = XGBClassifier(
-        max_depth=4,
-        learning_rate=0.24110220656695125,
-        n_estimators=118,
-        gamma=0.6817067483571848,
+        max_depth=6,
+        learning_rate=0.23987339304320798,
+        n_estimators=113,
+        gamma=0.880334867665456,
         eval_metric="error",
         use_label_encoder=False
         ).fit(X_train,y_train)
-    
+        
     return X_test, y_test, model
 
 def evaluate_model(X_test, y_test, model):
