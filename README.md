@@ -71,14 +71,14 @@ The model is deployed as a web app using `Plotly Dash`. The app is simple  and i
 
 ### Requirements/Specifications
 
-. Python 3.6 or later
-. sqlalchemy
-. pickle
-. sklearn
-. mlflow
-. xgboost
-. joblib
-. plotly-dash
+    . Python 3.6 or later
+    . sqlalchemy
+    . pickle
+    . sklearn
+    . mlflow
+    . xgboost
+    . joblib
+    . plotly-dash
 
 
 
