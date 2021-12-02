@@ -1,5 +1,4 @@
 import pandas as pd
-import numpy as np
 from sqlalchemy import create_engine 
 from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import train_test_split
@@ -7,11 +6,7 @@ from sklearn.metrics import r2_score, mean_squared_error
 import seaborn as sns
 import xgboost as xgb
 from sklearn.metrics import mean_squared_error
-import matplotlib.pyplot as plt
-import numpy as np
 from xgboost import XGBClassifier
-from bayes_opt import BayesianOptimization
-from sklearn.model_selection import cross_val_score
 from sklearn.metrics import classification_report, accuracy_score
 import mlflow.sklearn
 import sys

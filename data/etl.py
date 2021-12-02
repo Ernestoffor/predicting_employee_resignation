@@ -1,14 +1,7 @@
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-import dash
-#import dash_core_components as dcc deprecated
-from dash import dcc
-from dash.dependencies import Input, Output
-import mlflow.sklearn
-#import dash_html_components as html deprecated
-from dash import html
-import plotly.express as px
+
 import sys
 from sqlalchemy import create_engine 
 

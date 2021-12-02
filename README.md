@@ -69,25 +69,36 @@ The model is deployed as a web app using `Plotly Dash`. The app is simple  and i
 ![Prediction of No Resignation](images/predict0.png)
 
 
+### Requirements/Specifications
+
+. Python 3.6 or later
+. sqlalchemy
+. pickle
+. sklearn
+. mlflow
+. xgboost
+. joblib
+. plotly-dash
+
+
+
+### Running the Project
+There are basically three python scripts, namely:
+ . `etl.py` in data directory
+ . `model.py` in model folder
+ . `app.py` in app directory
+
+ To run the individual files do the following in the root directory:
+
+ 1. `python data/etl.py data/Employee.csv data/etlDatabase.db`
+ 2. `python model/model.py data/etlDatabase.db  model`
+ 3. `python app/app.py`
+
+
 ### Project Structure
 The is organized as follows with respect to the files and folders:
-Root Directory (`predicting_employee_resignation`)
-    |       |       |               |
-    |       |       |               |
-    |       |       |               |
-    |     `app`   `model`           |
-    |       |       |               |
-    |     `app.py`  `model.py`      |
-    |                               |
-    |                               |
-  `data`------                      |
-   |    |     |                 `employee.ipynb`
-   |    |     |
-   |    |    `etl.py`
-   |    |
-   |    `Employee.csv(dataset)`
-   |
-`etlDatabase.db`
+
+![Project Structure](images/img6.png)
 
 
 ### Status of the Project

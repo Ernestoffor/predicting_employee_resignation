@@ -2,13 +2,12 @@ import dash
 #import dash_core_components as dcc
 from dash import dcc
 from dash.dependencies import Input, Output
-import mlflow.sklearn
 #import dash_html_components as html
 from dash import html
 import plotly.express as px
 import joblib
 import pandas as pd
-import numpy as np
+
 
 
 # Load the model externally
